@@ -1,0 +1,14 @@
+# 应用名称
+spring:
+  application:
+    name: k8s
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+k8s:
+  url: https://127.0.0.1:42355
+  token: 1111111111111
+  validateSSL: false
+
+
