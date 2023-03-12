@@ -15,7 +15,7 @@ public class Client {
         if (apiClient == null){
             synchronized (Client.class){
                 if (apiClient == null){
-                    apiClient = Config.fromToken("https://172.24.128.95:42355", "11cb0fa567aba1387cbecec993a588ce",false);
+                    apiClient = Config.fromToken("https://12.24.28.9:4255", "11cba1387cbecec993a588ce",false);
                 }
             }
         }
