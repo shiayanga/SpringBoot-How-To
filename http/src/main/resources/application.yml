@@ -6,3 +6,7 @@ spring:
     name: demo
   servlet:
     context-path: /http
+
+logging:
+  level:
+    com.github.shiayanga.http.factory: INFO
