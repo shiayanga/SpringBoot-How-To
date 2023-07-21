@@ -48,8 +48,6 @@ public class QrCodeHelper {
                 image.setRGB(x, y, matrix.get(x, y) ? onColor : offColor);
             }
         }
-
-
         return image;
     }
 
@@ -78,12 +76,12 @@ public class QrCodeHelper {
 
         graphics.drawImage(image,0,0,null);
         graphics.drawImage(poster,x,y,logW,logH,null);
-        Shape shape = new RoundRectangle2D.Float(x, y, logW, logH, 50, 30);
-        graphics.setStroke(new BasicStroke(2.5f));
+        Shape shape = new RoundRectangle2D.Float(x, y, logW, logH, 30, 30);
+        graphics.setStroke(new BasicStroke(3f));
         graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         graphics.draw(shape);
         graphics.setColor(Color.BLACK);
-        graphics.setFont(new Font("黑体",Font.BOLD,24));
+        graphics.setFont(new Font("Source Han Sans CN",Font.PLAIN,30));
         graphics.drawString("我的邀请码:XVYTAD", matrix.getWidth() / 2 - 90, matrix.getHeight() - 15);
         graphics.dispose();
 
