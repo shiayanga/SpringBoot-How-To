@@ -8,11 +8,11 @@
         <version>2.7.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.shiayanga</groupId>
-    <artifactId>rest</artifactId>
+    <groupId>com.github.shiayanga.xinchaung</groupId>
+    <artifactId>dameng</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest</name>
-    <description>rest</description>
+    <name>dameng</name>
+    <description>dameng</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -28,10 +28,17 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.shiayanga</groupId>
-            <artifactId>util</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>3.1.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.dameng</groupId>
+            <artifactId>DmJdbcDriver18</artifactId>
+            <version>8.1.2.192</version>
+        </dependency>
+
     </dependencies>
 
     <build>
