@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    password: SYSDBA
+    username: SYSDBA
+    url: jdbc:dm://localhost:5236?scheme=DMHR
+    driver-class-name: dm.jdbc.driver.DmDriver
+server:
+  port: 9909
