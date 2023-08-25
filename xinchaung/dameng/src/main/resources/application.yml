@@ -6,3 +6,10 @@ spring:
     driver-class-name: dm.jdbc.driver.DmDriver
 server:
   port: 9909
+
+logging:
+  level:
+    root: debug
+
+mybatis:
+  mapper-locations: classpath:**/mapper/*.xml
